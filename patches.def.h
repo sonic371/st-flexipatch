@@ -14,7 +14,7 @@
  * when including this patch.
  * https://st.suckless.org/patches/alpha/
  */
-#define ALPHA_PATCH 0
+#define ALPHA_PATCH 1
 
 /* The alpha focus highlight patch allows the user to specify two distinct opacity values or
  * background colors in order to easily differentiate between focused and unfocused terminal
@@ -39,7 +39,7 @@
 /* This patch allows st to resize to any pixel size rather than snapping to character width/height.
  * https://st.suckless.org/patches/anysize/
  */
-#define ANYSIZE_PATCH 0
+#define ANYSIZE_PATCH 1
 
 /* A simple variant of the anysize patch that only changes the resize hints to allow the window to
  * be resized to any size.
@@ -70,18 +70,18 @@
  * This patch makes bold text rendered simply as bold, leaving the color unaffected.
  * https://st.suckless.org/patches/bold-is-not-bright/
  */
-#define BOLD_IS_NOT_BRIGHT_PATCH 0
+#define BOLD_IS_NOT_BRIGHT_PATCH 1
 
 /* This patch adds custom rendering of lines/blocks/braille characters for gapless alignment.
  * https://st.suckless.org/patches/boxdraw/
  */
-#define BOXDRAW_PATCH 0
+#define BOXDRAW_PATCH 1
 
 /* By default st only sets PRIMARY on selection.
  * This patch makes st set CLIPBOARD on selection.
  * https://st.suckless.org/patches/clipboard/
  */
-#define CLIPBOARD_PATCH 0
+#define CLIPBOARD_PATCH 1
 
 /* This patch allows st to be resized without cutting off text when the terminal window is
  * made larger again. Text does not wrap when the terminal window is made smaller, you may
@@ -89,7 +89,7 @@
  *
  * https://github.com/bakkeby/st-flexipatch/issues/34
  */
-#define COLUMNS_PATCH 0
+#define COLUMNS_PATCH 1
 
 /* Select and copy the last URL displayed with Mod+l. Multiple invocations cycle through the
  * available URLs.
@@ -249,7 +249,7 @@
  * https://github.com/cog1to/st-ligatures
  * https://st.suckless.org/patches/ligatures/
  */
-#define LIGATURES_PATCH 0
+#define LIGATURES_PATCH 1
 
 /* This patch makes st ignore terminal color attributes by forcing display of the default
  * foreground and background colors only - making for a monochrome look. Idea ref.
@@ -342,7 +342,7 @@
  * Text wraps when the terminal window is made smaller.
  * Comes with scrollback.
  */
-#define REFLOW_PATCH 0
+#define REFLOW_PATCH 1
 
 /* This patch allows you to specify a border that is relative in size to the width of a cell
  * in the terminal.
@@ -359,13 +359,13 @@
 /* Scroll back through terminal output using Shift+{PageUp, PageDown}.
  * https://st.suckless.org/patches/scrollback/
  */
-#define SCROLLBACK_PATCH 0
+#define SCROLLBACK_PATCH 1
 
 /* Scroll back through terminal output using Shift+MouseWheel.
  * This variant depends on SCROLLBACK_PATCH being enabled.
  * https://st.suckless.org/patches/scrollback/
  */
-#define SCROLLBACK_MOUSE_PATCH 0
+#define SCROLLBACK_MOUSE_PATCH 1
 
 /* Scroll back through terminal output using mouse wheel (when not in MODE_ALTSCREEN).
  * This variant depends on SCROLLBACK_PATCH being enabled.
@@ -378,13 +378,13 @@
  * with the mouse. This removes the default behaviour which would simply reverse the colors.
  * https://st.suckless.org/patches/selectioncolors/
  */
-#define SELECTION_COLORS_PATCH 0
+#define SELECTION_COLORS_PATCH 1
 
 /* This patch works with selectioncolors and alpha patches to make selection
  * background color transparent.
  * https://st.suckless.org/patches/selectionbg-alpha/
  */
-#define SELECTIONBG_ALPHA_PATCH 0
+#define SELECTIONBG_ALPHA_PATCH 1
 
 /* This is the single drawable buffer patch as outlined in the FAQ to get images
  * in w3m to display. While this patch does not break the alpha patch it images
@@ -405,7 +405,7 @@
  *
  * https://gist.github.com/saitoha/70e0fdf22e3e8f63ce937c7f7da71809
  */
-#define SIXEL_PATCH 0
+#define SIXEL_PATCH 1
 
 /* This patch allows clients to embed into the st window and is useful if you tend to
  * start X applications from the terminal. For example:
@@ -465,7 +465,7 @@
  *
  * https://st.suckless.org/patches/undercurl/
  */
-#define UNDERCURL_PATCH 0
+#define UNDERCURL_PATCH 1
 
 /* Allows mouse scroll without modifier keys for regardless of alt screen using the external
  * scroll program.
@@ -490,7 +490,7 @@
 /* Vertically center lines in the space available if you have set a larger chscale in config.h
  * https://st.suckless.org/patches/vertcenter/
  */
-#define VERTCENTER_PATCH 0
+#define VERTCENTER_PATCH 1
 
 /* Briefly inverts window content on terminal bell event.
  * https://st.suckless.org/patches/visualbell/
@@ -528,13 +528,13 @@
  * apply the resources named in the resources[] array in config.h.
  * https://st.suckless.org/patches/xresources/
  */
-#define XRESOURCES_PATCH 0
+#define XRESOURCES_PATCH 1
 
 /* This patch adds the ability to reload the Xresources config when a SIGUSR1 signal is received
  * e.g.: killall -USR1 st
  * Depends on the XRESOURCES_PATCH.
  */
-#define XRESOURCES_RELOAD_PATCH 0
+#define XRESOURCES_RELOAD_PATCH 1
 
 /* This patch adds the ability to configure st via Xdefaults, in addition to Xresources,
  * like the rxvt-unicode terminal. At startup, st will read and apply the system and user's
